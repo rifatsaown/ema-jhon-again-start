@@ -3,7 +3,6 @@ import "./Product.css";
 
 export default function Product({ name, img, seller, price, rating }) {
   return (
-
     <div className="product">
       <img src={img} alt="" />
       <div className="product-discription">
