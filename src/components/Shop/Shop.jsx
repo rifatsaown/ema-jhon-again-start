@@ -5,7 +5,6 @@ import "./Shop.css";
 
 const Shop = () => {
   const [products, setproducts] = useState([]);
-  
   useEffect(() => {
     fetch("products.json")
       .then((res) => res.json())
