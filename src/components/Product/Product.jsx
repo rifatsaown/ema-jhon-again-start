@@ -6,10 +6,14 @@ export default function Product({ name, img, seller, price, rating }) {
     <div className="product">
       <img src={img} alt="" />
       <div className="product-discription">
-      <p className="product-name">{name}</p>
-      <p className="product-price">Price: {price}</p>
-      <p>By: {seller}</p>
+        <p className="product-name">{name}</p>
+        <p className="product-price">Price: {price}</p>
+        <p>By: {seller}</p>
+        <p>Rating: {rating}</p>
       </div>
+      <button className="btn-cart">
+        Add To Cart
+      </button>
     </div>
   );
 }
