@@ -2,7 +2,8 @@ import React from "react";
 import "./Product.css";
 import { BsCartPlus } from "react-icons/bs";
 
-export default function Product({id, name, img, seller, price, rating ,handleAddToCart}) {
+export default function Product({ product, handleAddToCart }) {
+  const { name, img, seller, price, rating} = product;
   return (
     <div className="product">
       <img src={img} alt="" />
@@ -12,7 +13,7 @@ export default function Product({id, name, img, seller, price, rating ,handleAdd
         <p>By: {seller}</p>
         <p>Rating: {rating}</p>
       </div>
-      <button onClick={()=>handleAddToCart(id)} className="btn-cart">
+      <button onClick={()=>handleAddToCart(product)} className="btn-cart">
       <BsCartPlus/> Add To Cart 
       </button>
     </div>
