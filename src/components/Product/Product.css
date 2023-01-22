@@ -26,6 +26,9 @@ padding-left: 10px;
   position: absolute;
   bottom: 0;
 }
+.btn-cart:hover{
+  background: orange;
+}
 .product-name{
   font-size: 21px;
   font-weight: 600;
