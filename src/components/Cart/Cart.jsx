@@ -16,7 +16,7 @@ export default function Cart({cart}) {
     shipping += product.shipping;
   }
 
-  const tax = parseInt((total * 0.1).toFixed(2));
+  const tax = parseFloat((total * 0.1).toFixed(3));
   const grandTotal = total + shipping + tax;
 
   return (
