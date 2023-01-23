@@ -11,8 +11,9 @@
   height: 510px;
   position: relative;
 }
-.product-discription{
+.product-discription p{
 padding-left: 10px;
+margin: 1px;
 }
 .btn-cart {
   width: 100%;
@@ -32,12 +33,13 @@ padding-left: 10px;
 .product-name{
   font-size: 21px;
   font-weight: 600;
-  margin-bottom: 0;
-  margin-top: 0;
 }
 
 .product-price{
   font-size: 17px;
   font-weight: 600;
   margin-top: 7px;
+}
+.seller{
+  padding-top: 12px;
 }

@@ -8,6 +8,7 @@
 .products-container{
     margin: auto;
     display: grid;
+    margin-top: 110px;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-gap: 45px;
 }

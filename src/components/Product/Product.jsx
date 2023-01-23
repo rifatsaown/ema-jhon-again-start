@@ -10,7 +10,7 @@ export default function Product({ product, handleAddToCart }) {
       <div className="product-discription">
         <p className="product-name">{name}</p>
         <p className="product-price">Price: {price}</p>
-        <p>By: {seller}</p>
+        <p className="seller">By: {seller}</p>
         <p>Rating: {rating}</p>
       </div>
       <button onClick={()=>handleAddToCart(product)} className="btn-cart">
