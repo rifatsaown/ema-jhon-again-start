@@ -1,12 +1,12 @@
 import React from "react";
-import { BsCartPlus, BsStar } from "react-icons/bs";
+import { BsCartPlus, BsStarFill } from "react-icons/bs";
 import "./Product.css";
 
 export default function Product({ product, handleAddToCart }) {
   const { name, img, seller, price, ratings } = product;
   let starts = [];
   for (let i = 0; i < ratings; i++) {
-    starts.push(<BsStar />);
+    starts.push(<BsStarFill />);
   }
   return (
     <div className="product">
