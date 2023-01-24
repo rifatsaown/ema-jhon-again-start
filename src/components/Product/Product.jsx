@@ -16,8 +16,7 @@ export default function Product({ product, handleAddToCart }) {
         <p className="product-price">Price: {price}</p>
         <p className="seller">By: {seller}</p>
         <p>
-          Rating: &nbsp;
-          <span>{starts}</span>
+          Rating: &nbsp;<span>{starts}</span>
         </p>
       </div>
       <button onClick={() => handleAddToCart(product)} className="btn-cart">
