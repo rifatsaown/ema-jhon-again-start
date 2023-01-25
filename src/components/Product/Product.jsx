@@ -15,7 +15,7 @@ export default function Product({ product, handleAddToCart }) {
         <p className="product-name">{name}</p>
         <p className="product-price">Price: {price}</p>
         <p className="seller">By: {seller}</p>
-        <p>
+        <p className="rating">
           Rating: &nbsp;<span>{starts}</span>
         </p>
       </div>
