@@ -4,10 +4,10 @@ import "./Product.css";
 
 export default function Product({ product, handleAddToCart }) {
   const { name, img, seller, price, ratings } = product;
+
   let starts = [];
-  for (let i = 0; i < ratings; i++) {
-    starts.push(<BsStarFill />);
-  }
+  for (let i = 0; i < ratings; i++) {starts.push(<BsStarFill />);}
+  
   return (
     <div className="product">
       <img src={img} alt="" />
