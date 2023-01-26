@@ -16,7 +16,7 @@ const Shop = () => {
 
   const handleAddToCart = (produts) => {
     setCart([...cart, produts]);
-    addToDb(produts.id)
+    addToDb(produts.id);
   };
 
   return (
