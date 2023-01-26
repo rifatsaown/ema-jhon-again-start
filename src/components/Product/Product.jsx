@@ -6,7 +6,7 @@ export default function Product({ product, handleAddToCart }) {
   const { name, img, seller, price, ratings } = product;
 
   let starts = [];
-  for (let i = 0; i < ratings; i++) {starts.push(<BsStarFill />);}
+  for (let i = 0; i < ratings; i++) {starts.push(<BsStarFill key={i} />);}
   
   return (
     <div className="product">

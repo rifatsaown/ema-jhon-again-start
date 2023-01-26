@@ -9,9 +9,11 @@ export default function Cart({ cart }) {
   // for of mathood
   let total = 0;
   let shipping = 0;
+  let quantity = 0;
   for (const product of cart) {
-    total += product.price;
-    shipping += product.shipping;
+    quantity =quantity + product.quantity;
+    total =total+ product.price* product.quantity;
+    shipping =shipping+ product.shipping;
   }
 
   const tax = parseFloat((total * 0.1).toFixed(3));
@@ -20,7 +22,7 @@ export default function Cart({ cart }) {
   return (
     <div className="cart">
       <h1>Order Summary</h1>
-      <h3>Items Ordered: {cart.length}</h3>
+      <h3>Items Ordered: {quantity}</h3>
       <p>Total Price : {total}</p>
       <p>Total Shipping :{shipping} </p>
       <p>Tax : {tax}</p>
